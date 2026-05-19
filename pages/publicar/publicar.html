@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Publicar</title>
+</head>
+
+<body style="background-color: white;">
+
+    <nav style="font-family: Arial, Helvetica, sans-serif;
+   font-size:25px; text-align:center; background-color: rgb(199, 229, 241);">
+        <table style="border-color: rgb(255, 255, 255);" border="1px" width="100%">
+            <tr>
+
+                <td style="font-size: 35px; color: rgb(5, 71, 87); text-align: left;">
+                    CampusMarket</td>
+
+                <td><a href="../inicio/inicio.html"
+                        style="text-decoration: none; color: rgb(5, 71, 87);">Inicio</a></td>
+
+                <td><a href="../productos/productos.html"
+                        style="text-decoration: none; color: rgb(5, 71, 87);">Productos</a></td>
+
+                <td><a href="../publicar/publicar.html"
+                        style="text-decoration: none; color: rgb(5, 71, 87);">Publicar</a></td>
+
+                <td><a href="../perfil/perfil.html" style="text-decoration: none; color: rgb(5, 71, 87);">Perfil</a></td>
+
+                <td><a href="" style="text-decoration: none; color: rgb(5, 71, 87);">Contacto</a></td>
+
+                <td><a href="../../index.html"
+                        style="text-decoration: none; color: rgb(5, 71, 87);">Cerrar Sesión</a></td>
+
+            </tr>
+        </table>
+    </nav><br>
+
+    <header>
+        <h1 style="text-align: center; color: rgb(5, 71, 87); 
+        font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 60px;">Publicar Producto</h1>
+    </header>
+
+    <section id="FormularioPublicar">
+        <form method="get" action="publicar.html">
+            <fieldset style="width: 650px; margin: auto; border-color: rgb(199, 229, 241);">
+                <legend style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    color: rgb(11, 110, 138);font-size:30px ;">Información del Producto 📚 </legend><br>
+
+                <label for="nombre" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
+                    Nombre del Producto: </label><br>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese el nombre del producto"
+                    required style="font-family: Arial, Helvetica, sans-serif;
+                    font-size: 15px; width: 500px; height: 30px;"><br><br>
+
+                <label for="precio" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
+                    Precio (USD):</label><br>
+                <input type="number" name="precio" id="precio" placeholder="Ingrese el precio (0.00)"
+                    step="0.01" required style="font-family: Arial, Helvetica, sans-serif;
+                    font-size: 15px; width: 500px; height: 30px;"><br><br>
+
+                <label for="categoria" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
+                    Categoría: </label><br>
+                <select name="categoria" id="categoria" required style="font-family: Arial, Helvetica, sans-serif;
+                    width: 507px; height: 35px; font-size: 15px;">
+                    <option value="">Seleccione una categoría</option>
+                    <option value="libros">Libros</option>
+                    <option value="calculadoras">Calculadoras</option>
+                    <option value="apuntes">Apuntes</option>
+                    <option value="electronicos">Electrónicos</option>
+                    <option value="accesorios">Accesorios</option>
+                </select><br><br>
+
+                <label style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
+                    Estado del producto: </label><br>
+                <input type="radio" name="estado" value="nuevo" required> Nuevo<br>
+                <input type="radio" name="estado" value="como nuevo"> Como nuevo<br>
+                <input type="radio" name="estado" value="buen estado"> Buen estado<br>
+                <input type="radio" name="estado" value="usado"> Usado<br><br>
+
+                <label for="descripcion" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
+                    Descripción del Producto: </label><br>
+                <textarea name="descripcion" id="descripcion" placeholder="Ingrese una descripción detallada del producto"
+                    required style="font-family: Arial, Helvetica, sans-serif;
+                    width: 500px; height: 100px; font-size: 15px;"></textarea><br><br>
+
+                <label for="imagen" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
+                    Subir Imagen: </label><br>
+                <input type="file" name="imagen" id="imagen" required
+                    style="font-family: Arial, Helvetica, sans-serif;
+                    font-size: 15px; width: 500px;"><br><br>
+
+                <fieldset style="background-color: rgb(199, 229, 241);
+                width: 520px; border-color: rgb(11, 110, 138);">
+
+                    <legend style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    color: rgb(11, 110, 138); font-size:20px ;">Información del Contacto ☎️ </legend><br>
+
+                    <label for="nombreContacto" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
+                        Nombre de Contacto: </label><br>
+                    <input type="text" name="nombreContacto" id="nombreContacto"
+                        placeholder="Ingrese su nombre" required style="font-family: Arial, Helvetica, sans-serif;
+                        font-size: 15px; width: 500px; height: 30px;"><br><br>
+
+                    <label for="correoContacto" style="font-family: Arial, Helvetica, sans-serif; 
+                        font-size: 16px;"> Correo Electrónico: </label><br>
+                    <input type="email" name="correoContacto" id="correoContacto"
+                        placeholder="Ingrese su correo electrónico" required
+                        style="font-family: Arial, Helvetica, sans-serif; font-size: 15px;
+                        width: 500px; height: 30px;"><br><br>
+
+                    <label for="telefonoContacto" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
+                        Número de Teléfono: </label><br>
+                    <input type="tel" name="telefonoContacto" id="telefonoContacto"
+                        placeholder="Ingrese su número de teléfono" required
+                        style="font-family: Arial, Helvetica, sans-serif;
+                        font-size: 15px; width: 500px; height: 30px;"><br><br>
+                </fieldset><br><br>
+
+                <div style="text-align: center;">
+                    <button type="submit" style="font-family: Arial, Helvetica, sans-serif;
+                        font-size: 16px; background-color: rgb(199, 229, 241);"> Publicar Producto </button>
+
+                    <button type="reset" style="font-family: Arial, Helvetica, sans-serif;
+                        font-size: 16px; background-color: rgb(199, 229, 241);"> Limpiar Formulario </button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registrarse por Primera Vez</title>
+</head>
+
+<body style="background-color: white;
+font-family: Arial, Helvetica, sans-serif;">
+
+    <header>
+        <h1 style="text-align: center; color: rgb(11, 110, 138);">REGISTRO DE USUARIO</h1>
+        <h3 style="text-align: center; color: rgb(5, 71, 87);">
+            Complete el siguiente formulario para crear su cuenta</h3>
+    </header><br>
+
+    <main>
+        <center>
+            <form action="../../index.html" method="get">
+                <fieldset style="width: 400px; border-color: rgb(11, 110, 138);">
+                    <legend style="color: rgb(11, 110, 138); font-size: 20px;"> Formulario de Registro </legend><br>
+
+                    <table>
+                        <tr>
+                            <td> <label for="nombre">Nombres: </label> </td>
+                            <td> <input type="text" id="nombre"name="nombre" placeholder="Ingrese sus nombres" required> </td>
+                        </tr>
+
+                        <tr>
+                            <td><br></td>
+                        </tr>
+
+                        <tr>
+                            <td> <label for="apellido"> Apellidos: </label> </td>
+                            <td> <input type="text" id="apellido" name="apellido" placeholder="Ingrese sus apellidos" required></td>
+                        </tr>
+
+                        <tr>
+                            <td><br></td>
+                        </tr>
+
+                        <tr>
+                            <td> <label for="cedula"> Cédula: </label></td>
+                            <td> <input type="text" id="cedula" name="cedula" maxlength="10" placeholder="Ingrese su cédula" required> </td>
+                        </tr>
+
+                        <tr>
+                            <td><br></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="fecha"> Fecha de Nacimiento:</label></td>
+                            <td> <input type="date" id="fecha" name="fecha"required></td>
+                        </tr>
+
+                        <tr>
+                            <td><br></td>
+                        </tr>
+
+                        <tr>
+                            <td> <label for="genero"> Género:</label> </td>
+                            <td> <select id="genero"name="genero"required>
+                                    <option value="">Seleccione una opción </option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>
+                                </select></td>
+                        </tr>
+
+                        <tr>
+                            <td><br></td>
+                        </tr>
+
+                        <tr>
+                            <td> <label for="correo">Correo Electrónico:</label></td>
+                            <td> <input type="email" id="correo" name="correo" placeholder="Ingrese su correo"required> </td>
+                        </tr>
+
+                        <tr>
+                            <td><br></td>
+                        </tr>
+
+                        <tr>
+                            <td> <label for="contrasena">Contraseña:</label> </td>
+                            <td> <input type="password" id="contrasena" name="contrasena"  minlength="8"
+                                    maxlength="16"placeholder="Ingrese una contraseña" required></td>
+                        </tr>
+                    </table><br>
+
+                    <button type="submit">Finalizar Registro</button><br><br>
+                    <a href="../../index.html" style="text-decoration: none;
+                        color: rgb(11, 110, 138);"> Volver al Inicio de Sesión </a>
+                </fieldset>
+            </form>
+        </center>
+    </main>
+</body>
+</html>

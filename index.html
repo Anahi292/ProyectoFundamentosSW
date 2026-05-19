@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+
+<body style="background-color: white;">
+
+    <header>
+        <h1 style="text-align: center; color: rgb(5, 71, 87); 
+        font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 60px;">CampusMarket</h1>
+
+        <h4 style="text-align: center; color: rgb(119, 122, 113); font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;">Compra y venta de artículos entre estudiantes universitarios</h4>
+    </header>
+
+    <main>
+        <section id="login">
+            <form method="get" action="../ProyectoFundamentosSW/pages/inicio/inicio.html">
+
+                <fieldset style="width: 400px; margin: auto; border-color: rgb(199, 229, 241);">
+
+                    <legend style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    color: rgb(11, 110, 138); font-size:30px;"> Iniciar Sesión 🔐 </legend><br>
+
+                    <div style="text-align: center;">
+                        <label for="usuario" style="font-family: Arial, Helvetica, sans-serif;
+                            font-size: 20px;"> Usuario:</label><br>
+                        <input type="text" id="usuario" required placeholder="Ingrese el usuario" style="font-family: Arial, Helvetica, sans-serif; font-size:15px;
+                            width: 300px; height: 30px;"><br><br>
+
+                        <label for="clave" style="font-family: Arial, Helvetica, sans-serif;
+                            font-size: 20px;"> Contraseña: </label><br>
+                        <input type="password" id="clave" name="password" required placeholder="Ingrese su contraseña"
+                            minlength="8" maxlength="16"
+                            pattern="(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&.#_-])[A-Za-z\d@$!%*?&.#_-]{8,16}"
+                            title="Debe incluir letras, números y al menos un carácter especial." style="font-family: Arial, Helvetica, sans-serif; font-size:15px;
+    width: 300px; height: 30px;"><br><br><br>
+
+                        <button type="submit" style="background-color: rgb(199, 229, 241);
+                            font-size: 16px; font-family: Arial, Helvetica, sans-serif;
+                            width: 170px; height: 40px;">Iniciar Sesión</button><br><br>
+
+                        <p style="font-family: Arial, Helvetica, sans-serif;font-size: 17px;">O continúe con:</p>
+
+                        <button type="button" style="font-size: 15px; 
+                        background-color: rgb(199, 229, 241); height: 35px;">
+                            <a href="https://www.google.com/intl/es-419/gmail/about/" style="text-decoration: none; color: rgb(5, 71, 87);
+                                font-family: Arial, Helvetica, sans-serif;">Google</a>
+                        </button>
+
+                        <button type="button" style="font-size: 15px;
+                            background-color: rgb(199, 229, 241); height: 35px;">
+                            <a href="https://www.facebook.com/?locale=es_LA" style="text-decoration: none;
+                                color: rgb(5, 71, 87); font-family: Arial, Helvetica, sans-serif;"> Facebook </a>
+                        </button><br><br>
+
+                        <p style="font-family: Arial, Helvetica, sans-serif;
+                        font-size: 16px;"> ¿No tienes cuenta?</p>
+
+                        <a href="../ProyectoFundamentosSW/pages/registrar/registrar.html" style="font-family: Arial, Helvetica, sans-serif;color: rgb(11, 110, 138);
+                            font-size: 18px; text-decoration: none;"> Registrarse </a>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
