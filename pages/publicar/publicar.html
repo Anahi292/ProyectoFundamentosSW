@@ -4,34 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Publicar</title>
+    <link rel="icon" href="../../multimedia/img/Icono.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body style="background-color: white;">
 
     <nav style="font-family: Arial, Helvetica, sans-serif;
-   font-size:25px; text-align:center; background-color: rgb(199, 229, 241);">
-        <table style="border-color: rgb(255, 255, 255);" border="1px" width="100%">
+    font-size:25px; text-align:center; background-color: rgb(199, 229, 241);">
+
+        <table border="1px" width="100%" style="border-color: rgb(255, 255, 255);">
             <tr>
-
-                <td style="font-size: 35px; color: rgb(5, 71, 87); text-align: left;">
-                    CampusMarket</td>
-
-                <td><a href="../inicio/inicio.html"
-                        style="text-decoration: none; color: rgb(5, 71, 87);">Inicio</a></td>
-
+                <td style="font-size: 35px;color: rgb(5, 71, 87); text-align: left;">CampusMarket</td>
+                <td><a href="../inicio/inicio.html" style="text-decoration: none; color: rgb(5, 71, 87);"><i class="fas fa-home"></i> Inicio</a>
+                </td>
                 <td><a href="../productos/productos.html"
-                        style="text-decoration: none; color: rgb(5, 71, 87);">Productos</a></td>
-
+                        style="text-decoration: none; color: rgb(5, 71, 87);"><i class="fas fa-box-open"></i> Productos</a></td>
                 <td><a href="../publicar/publicar.html"
-                        style="text-decoration: none; color: rgb(5, 71, 87);">Publicar</a></td>
-
-                <td><a href="../perfil/perfil.html" style="text-decoration: none; color: rgb(5, 71, 87);">Perfil</a></td>
-
-                <td><a href="" style="text-decoration: none; color: rgb(5, 71, 87);">Contacto</a></td>
-
-                <td><a href="../../index.html"
-                        style="text-decoration: none; color: rgb(5, 71, 87);">Cerrar Sesión</a></td>
-
+                        style="text-decoration: none;  color: rgb(5, 71, 87);"><i class="fas fa-plus-circle"></i> Publicar</a></td>
+                <td><a href="../perfil/perfil.html" style="text-decoration: none; color: rgb(5, 71, 87);"><i class="fas fa-user"></i> Perfil</a>
+                </td>
+                <td><a href="../contacto/contacto.html"
+                        style="text-decoration: none; color: rgb(5, 71, 87);"><i class="fas fa-envelope"></i> Contacto</a></td>
+                <td><a href="../../index.html" style="text-decoration: none; color: rgb(5, 71, 87);"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
+                </td>
             </tr>
         </table>
     </nav><br>
@@ -49,14 +46,14 @@
 
                 <label for="nombre" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
                     Nombre del Producto: </label><br>
-                <input type="text" name="nombre" id="nombre" placeholder="Ingrese el nombre del producto"
-                    required style="font-family: Arial, Helvetica, sans-serif;
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese el nombre del producto" required
+                    style="font-family: Arial, Helvetica, sans-serif;
                     font-size: 15px; width: 500px; height: 30px;"><br><br>
 
                 <label for="precio" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
                     Precio (USD):</label><br>
-                <input type="number" name="precio" id="precio" placeholder="Ingrese el precio (0.00)"
-                    step="0.01" required style="font-family: Arial, Helvetica, sans-serif;
+                <input type="number" name="precio" id="precio" placeholder="Ingrese el precio (0.00)" step="0.01"
+                    required style="font-family: Arial, Helvetica, sans-serif;
                     font-size: 15px; width: 500px; height: 30px;"><br><br>
 
                 <label for="categoria" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
@@ -80,14 +77,13 @@
 
                 <label for="descripcion" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
                     Descripción del Producto: </label><br>
-                <textarea name="descripcion" id="descripcion" placeholder="Ingrese una descripción detallada del producto"
-                    required style="font-family: Arial, Helvetica, sans-serif;
+                <textarea name="descripcion" id="descripcion"
+                    placeholder="Ingrese una descripción detallada del producto" required style="font-family: Arial, Helvetica, sans-serif;
                     width: 500px; height: 100px; font-size: 15px;"></textarea><br><br>
 
                 <label for="imagen" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
                     Subir Imagen: </label><br>
-                <input type="file" name="imagen" id="imagen" required
-                    style="font-family: Arial, Helvetica, sans-serif;
+                <input type="file" name="imagen" id="imagen" required style="font-family: Arial, Helvetica, sans-serif;
                     font-size: 15px; width: 500px;"><br><br>
 
                 <fieldset style="background-color: rgb(199, 229, 241);
@@ -98,22 +94,20 @@
 
                     <label for="nombreContacto" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
                         Nombre de Contacto: </label><br>
-                    <input type="text" name="nombreContacto" id="nombreContacto"
-                        placeholder="Ingrese su nombre" required style="font-family: Arial, Helvetica, sans-serif;
+                    <input type="text" name="nombreContacto" id="nombreContacto" placeholder="Ingrese su nombre"
+                        required style="font-family: Arial, Helvetica, sans-serif;
                         font-size: 15px; width: 500px; height: 30px;"><br><br>
 
                     <label for="correoContacto" style="font-family: Arial, Helvetica, sans-serif; 
                         font-size: 16px;"> Correo Electrónico: </label><br>
                     <input type="email" name="correoContacto" id="correoContacto"
-                        placeholder="Ingrese su correo electrónico" required
-                        style="font-family: Arial, Helvetica, sans-serif; font-size: 15px;
+                        placeholder="Ingrese su correo electrónico" required style="font-family: Arial, Helvetica, sans-serif; font-size: 15px;
                         width: 500px; height: 30px;"><br><br>
 
                     <label for="telefonoContacto" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
                         Número de Teléfono: </label><br>
                     <input type="tel" name="telefonoContacto" id="telefonoContacto"
-                        placeholder="Ingrese su número de teléfono" required
-                        style="font-family: Arial, Helvetica, sans-serif;
+                        placeholder="Ingrese su número de teléfono" required style="font-family: Arial, Helvetica, sans-serif;
                         font-size: 15px; width: 500px; height: 30px;"><br><br>
                 </fieldset><br><br>
 
@@ -128,4 +122,5 @@
         </form>
     </section>
 </body>
+
 </html>
